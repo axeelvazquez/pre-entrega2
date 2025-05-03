@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAMPEONATO DE FUTBOL</title>
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      h1 {
+        background-color: #d3d3d3f8;
+        border-radius: 8px;
+        text-align: center;
+      }
+
+      .temporada {
+        background-color: #d3d3d3f8;
+        padding: 20px;
+        margin-bottom: 40px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .galeria-grid {
+        display: grid;
+        width: 100%;
+        max-width: 1000px;
+        margin: auto;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+      }
+
+      .galeria-grid img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 8px;
+        display: block;
+      }
+
+      .galeria-grid + button {
+        margin-top: 15px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px 20px;
+        font-size: 1rem;
+        background-color: #cf2a2a;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .galeria-grid + button:hover {
+        background-color: #b41f1f;
+      }
+
+      @media (max-width: 600px) {
+        .galeria-grid,
+        .galeria-grid2 {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img
+          src="../assets/png-transparent-football-fire-fireball-sports-equipment-sports-flame.png"
+          alt="logo de pagina"
+          width="45px"
+        />
+        <span>Campeonato Elite Amateur</span>
+      </div>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav>
+        <ul>
+          <li><a class="nav-link" href="../index.html">HOME</a></li>
+          <li><a class="nav-link" href="./nosotros.html">NOSOTROS</a></li>
+          <li><a class="nav-link" href="./galeria.html">GALERIA</a></li>
+          <li><a class="nav-link" href="./contact.html">CONTACTO</a></li>
+          <li><a class="nav-link" href="./registrate.html">REGISTRATE</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h1>Galería</h1>
+
+        <!-- TEMPORADA 2024-2025 -->
+        <div class="temporada">
+          <h2>Temporada 2024-2025</h2>
+          <div class="galeria-grid">
+            <img
+              src="https://images.pexels.com/photos/9517939/pexels-photo-9517939.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt=""
+            />
+            <img
+              src="https://images.pexels.com/photos/918798/pexels-photo-918798.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt=""
+            />
+            <img
+              src="https://images.pexels.com/photos/31292770/pexels-photo-31292770/free-photo-of-jugador-de-futbol-dinamico-en-accion-en-un-campo-lluvioso.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt=""
+            />
+            <img
+              src="https://images.pexels.com/photos/9519530/pexels-photo-9519530.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt=""
+            />
+          </div>
+          <button>Ver más</button>
+        </div>
+
+        <!-- TEMPORADA 2023-2024 -->
+        <div class="temporada">
+          <h2>Temporada 2023-2024</h2>
+          <div class="galeria-grid">
+            <img
+              src="https://images.unsplash.com/photo-1613125479732-14543c793349?w=500&auto=format&fit=crop&q=60"
+              alt=""
+            />
+            <img
+              src="https://images.unsplash.com/photo-1603291697926-7e5822ed1ac5?w=500&auto=format&fit=crop&q=60"
+              alt=""
+            />
+            <img
+              src="https://plus.unsplash.com/premium_photo-1661895100918-e29962a67da7?w=500&auto=format&fit=crop&q=60"
+              alt=""
+            />
+            <img
+              src="https://images.pexels.com/photos/6078311/pexels-photo-6078311.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt=""
+            />
+          </div>
+          <button>Ver más</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>Marca registrada por Axel</footer>
+  </body>
+</html>

@@ -1,0 +1,201 @@
+body {
+  background-image: url("./assets/fototorneo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  margin: 0;
+  padding-top: 80px;
+  font-family: sans-serif;
+}
+
+header {
+  background-color: #060d0b;
+  height: 70px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 0 20px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header .logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header .logo-container span {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+header img {
+  width: 45px;
+}
+
+nav {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: aliceblue;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+nav ul li a[href*="registrate"] {
+  background-color: #cf2a2a;
+  color: white;
+}
+
+nav ul li a[href*="registrate"]:hover {
+  background-color: #b82b2b;
+}
+
+nav ul li:hover {
+  text-decoration: underline;
+}
+
+nav ul li a:hover {
+  background-color: #b8b5b5;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.menu-icon span {
+  height: 3px;
+  width: 25px;
+  background: white;
+  display: block;
+  border-radius: 2px;
+}
+
+.card {
+  width: 90%;
+  margin: auto;
+  background-color: #d3d3d3f8;
+}
+
+.card__img {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+}
+
+.card__title {
+  margin: 0;
+  padding: 15px;
+}
+
+.card__text {
+  padding: 0 15px 15px;
+}
+
+main section {
+  width: 600px;
+  margin: auto;
+  border-radius: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+section img {
+  max-width: 100%;
+}
+
+input {
+  border-radius: 5px;
+}
+
+input:focus {
+  background: #c9c4c4;
+  border-radius: 5px;
+}
+
+textarea:focus {
+  background: #c9c4c4;
+}
+
+label {
+  font-size: 1rem;
+}
+
+.boton {
+  display: inline-block;
+  background-color: #cf2a2a;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #222;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  nav {
+    position: static;
+    transform: none;
+    width: 100%;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #222;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .menu-toggle:checked + .menu-icon + nav ul {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+    text-align: center;
+  }
+}
