@@ -4,7 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CAMPEONATO DE FUTBOL</title>
+    <meta
+      name="description"
+      content="Explorá la galería del Campeonato Elite Amateur: fotos de las temporadas 2023-2024 y 2024-2025 que capturan la pasión, la competencia y los mejores momentos del fútbol amateur."
+    />
+    <meta
+      name="keywords"
+      content="torneo, futbol, Campeonato Elite Amateur, futbol amateur, torneo amateur, liga amateur"
+    />
     <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header>
@@ -58,11 +67,11 @@
               alt=""
             />
           </div>
-          <button>Ver más</button>
+          <button class="boton">Ver más</button>
         </div>
 
         <!-- TEMPORADA 2023-2024 -->
-        <div class="temporada">
+        <div data-aos="fade-up" data-aos-duration="1000" class="temporada">
           <h2>Temporada 2023-2024</h2>
           <div class="galeria-grid">
             <img
@@ -82,11 +91,15 @@
               alt=""
             />
           </div>
-          <button>Ver más</button>
+          <button class="boton-enviar">Ver más</button>
         </div>
       </section>
     </main>
 
     <footer>Marca registrada por Axel</footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

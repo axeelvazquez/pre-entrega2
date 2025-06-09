@@ -1,29 +1,22 @@
-.boton {
+@mixin button-styles($color, $bg-color) {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: red;
-  color: white;
+  background-color: $bg-color;
+  color: $color;
   padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
   margin: 0;
   height: 50px;
+}
+.boton {
+  @include button-styles(white, red);
 }
 
 .boton-enviar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: green;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  margin: 0;
-  height: 50px;
+  @include button-styles(white, green);
 }
-
 body {
   background-image: url("./assets/fototorneo.jpg");
   background-size: cover;
@@ -94,12 +87,12 @@ nav ul li {
   border-radius: 10px;
 }
 
-nav ul li a[href*=registrate] {
+nav ul li a[href*="registrate"] {
   background-color: #cf2a2a;
   color: white;
 }
 
-nav ul li a[href*=registrate]:hover {
+nav ul li a[href*="registrate"]:hover {
   background-color: #b82b2b;
 }
 
@@ -134,7 +127,7 @@ nav ul li a:hover {
 .card {
   width: 90%;
   margin: auto;
-  background-color: rgba(211, 211, 211, 0.9725490196);
+  background-color: #d3d3d3f8;
 }
 
 .card__img {
@@ -194,9 +187,11 @@ footer {
     transform: none;
     width: 100%;
   }
+
   .menu-icon {
     display: flex;
   }
+
   nav ul {
     display: none;
     flex-direction: column;
@@ -204,9 +199,11 @@ footer {
     width: 100%;
     padding: 10px 0;
   }
+
   .menu-toggle:checked + .menu-icon + nav ul {
     display: flex;
   }
+
   nav ul li {
     margin: 10px 0;
     text-align: center;
@@ -220,13 +217,13 @@ footer {
 }
 
 h1 {
-  background-color: rgba(211, 211, 211, 0.9725490196);
+  background-color: #d3d3d3f8;
   border-radius: 8px;
   text-align: center;
 }
 
 .temporada {
-  background-color: rgba(211, 211, 211, 0.9725490196);
+  background-color: #d3d3d3f8;
   padding: 20px;
   margin-bottom: 40px;
   border-radius: 10px;
@@ -274,6 +271,7 @@ h1 {
     grid-template-columns: 1fr;
   }
 }
+
 /*contact*/
 .body-contact-registrate {
   margin: 0;
@@ -281,7 +279,7 @@ h1 {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: rgba(211, 211, 211, 0.9725490196);
+  background-color: #d3d3d3f8;
   font-family: sans-serif;
 }
 
@@ -307,10 +305,9 @@ h1 {
   width: 100%;
   max-width: 900px;
 }
-
 .info-box,
 .form-box {
-  background-color: rgba(211, 211, 211, 0.9725490196);
+  background-color: #d3d3d3f8;
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
@@ -335,13 +332,13 @@ input textarea {
   box-sizing: border-box;
 }
 
-input[type=button] {
+input[type="button"] {
   background-color: black;
   color: white;
   cursor: pointer;
 }
 
-input[type=button]:hover {
+input[type="button"]:hover {
   background-color: #444;
 }
 
@@ -355,7 +352,7 @@ main {
 }
 
 form {
-  background-color: rgba(211, 211, 211, 0.9725490196);
+  background-color: #d3d3d3f8;
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
@@ -373,7 +370,6 @@ section {
   flex-direction: column;
   gap: 1rem;
 }
-
 input,
 select,
 textarea,
@@ -401,5 +397,3 @@ footer {
   background-color: #222;
   color: white;
 }
-
-/*# sourceMappingURL=style.css.map */
